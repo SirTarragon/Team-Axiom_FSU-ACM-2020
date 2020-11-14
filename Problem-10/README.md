@@ -80,3 +80,30 @@ Q10-Please Be Careful Wild Turkey.md 11/13/2020
 3 / 3
 Out of the 19 possible paths, 3 involve the turkey falling in a hole (#9, #18, and #19). Thus, the correct answer
 is 16.
+
+
+The directional information in Q10 has a mistake. The example sub-path in the
+first section should read:
+
+=====================
+
+ For example, if a turkey was heading up from square `(1, 1)` it could have the
+following series of moves `(1, 1) -> [hit the lava] (2, 1), (2, 2)`. To clarify,
+upon hitting the top of the grid (moving up from space `(1, 1)`), the turkey
+jumps back a space (to `(2, 1)`) but maintains the upward momentum, so moving
+left, right, or up are all valid but moving down is not.
+
+=====================
+
+In the explanation, the description of path #10 should read:
+
+=====================
+
+In path #10, the turkey moves up to `(2, 3)`, then again to `(1, 3)`. At `(1,
+3)`, the turkey again moves up, hits the lava, jumps back to `(2, 3)` and
+maintains its upward momentum.
+
+=====================
+
+The information about the grid endpoints (top left is `(1, 1)`, bottom left is
+`(R, 1)`, etc.) is still correct.
