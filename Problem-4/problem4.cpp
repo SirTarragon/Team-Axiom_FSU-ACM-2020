@@ -1,4 +1,5 @@
 #include <iostream>
+#include "ctype.h"
 #include <string>
 
 using namespace std;
@@ -15,34 +16,62 @@ int main(){
   int n, m;
   cin >> n >> m;
   string sus;
-  int sus_count;
-  cout << n << " " << m << endl;
+  int sus_count = 0;
+  //cout << n << " " << m << endl;
 
-  int playerCounter = 1, lineCounter = 1;
   Player gameSession[m];
   Player playerList[n];
-  // Seed playerList
-  for(int i = 0; i < n; i++){
-    playerList[i].color = "Player Num: "+(i+1);
-  }
-  //while(sus_count > 0 && lineCounter == m){
-    for(int i = 0; i < m; i++){
-      bool playerExists = false;
-      cin >> gameSession[i].color >> gameSession[i].location  >> gameSession[i].movement;
-      int j = 0;
-      for(int j; j < n; j++){
+
+  int ptr = 0;
+  for(int i = 0; i < m; i++){
+    bool playerExists = false;
+    cin >> gameSession[i].color >> gameSession[i].location  >> gameSession[i].movement;
+    // Lowercasing color
+    for(int c = 0; c < gameSession[i].color.length(); c++){
+      gameSession[i].color[c] = tolower(gameSession[i].color[c]);
+    }
+    // Lowercasing location
+    for(int c = 0; c < gameSession[i].location.length(); c++){
+      gameSession[i].location[c] = tolower(gameSession[i].location[c]);
+    }
+    // Uppercasing movement
+    gameSession[i].movement = toupper(gameSession[i].movement);
+
+    for(int j = 0; j < n; j++){
+      if(playerList[j].color == gameSession[i].color){
+        playerExists = true;
+      }
+    }
+
+    if(playerExists == false){
+      playerList[ptr].color = gameSession[i].color;
+      playerList[ptr].location = gameSession[i].location;
+      playerList[ptr].movement = gameSession[i].movement;
+      ptr++;
+    }else{
+      for(int j = 0; j < n; j++){
         if(playerList[j].color == gameSession[i].color){
-          playerExists = true;
+          //cout << "Is " << playerList[j].color << " sus?" << endl;
+          if(playerList[j].location != gameSession[i].location){
+            if(playerList[j].movement == gameSession[i].movement){
+              //cout << "Yes" << endl;
+              sus = playerList[j].color;
+              sus_count++;
+              playerList[j].location = gameSession[i].location;
+              playerList[j].movement = gameSession[i].movement;
+              j = m;
+            }//else{
+              //cout << "No" << endl;
+            //}
+          }else{
+            //cout << "No" << endl;
+            playerList[j].location = gameSession[i].location;
+            playerList[j].movement = gameSession[i].movement;
+          }
         }
       }
-
-      if(playerExists == false){
-        playerList[j].color = gameSession[i].color;
-      }
     }
+  }
 
-    for(int i = 0; i < n; i++){
-      cout << playerList[i].color << endl;
-    }
-  //}
+    cout << sus << endl << sus_count << endl;
 }
