@@ -55,20 +55,24 @@ int main(){
         if(playerList[j].color == gameSession[i].color){
           //cout << "Is " << playerList[j].color << " sus?" << endl;
           if(playerList[j].location != gameSession[i].location){
-            if(playerList[j].movement == gameSession[i].movement){
-              //cout << "Yes" << endl;
+            if(playerList[j].movement == 'I' && gameSession[i].movement == 'O'){
+              //cout << "Yes, because there was a sus loc change" << endl;
               sus = playerList[j].color;
               sus_count++;
+              //cout << sus_count;
               playerList[j].location = gameSession[i].location;
               playerList[j].movement = gameSession[i].movement;
               j = m;
-            }//else{
-              //cout << "No" << endl;
-            //}
+            }else{
+              //cout << "No, but there was a loc change" << endl;
+              playerList[j].location = gameSession[i].location;
+              playerList[j].movement = gameSession[i].movement;
+            }
           }else{
-            //cout << "No" << endl;
-            playerList[j].location = gameSession[i].location;
-            playerList[j].movement = gameSession[i].movement;
+              //cout << "No" << endl;
+              playerList[j].location = gameSession[i].location;
+              playerList[j].movement = gameSession[i].movement;
+
           }
         }
       }
