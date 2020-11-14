@@ -6,5 +6,7 @@ Team Axiom:
   - Tyler McClanahan
   
 Placement: 37th / 97th
+
 Total # of Teams: 122
+
 Total # of Participants: 230
