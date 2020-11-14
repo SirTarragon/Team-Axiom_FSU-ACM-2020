@@ -1,3 +1,5 @@
+# NOTICE - I'll attempt to at least finish this problem even though the contest is over.
+
 Q10-Please Be Careful Wild Turkey.md 11/13/2020
 1 / 3
 Question 10: Please Be Careful Wild Turkey

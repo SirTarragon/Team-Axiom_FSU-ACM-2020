@@ -1,3 +1,5 @@
+# NOTICE - I'll attempt to at least finish this problem even though the contest is over.
+
 Q7-Bang for your Buck.md 11/14/2020
 1 / 1
 Question 7: Bang for your Buck

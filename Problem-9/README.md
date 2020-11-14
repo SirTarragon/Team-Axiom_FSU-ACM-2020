@@ -1,3 +1,5 @@
+# NOTICE - I'll attempt to at least finish this problem even though the contest is over.
+
 Q9-T, Tur, Turkey.md 11/13/2020
 1 / 2
 Question 9: T, Tu, Tur, Turk, Turke, Turkey

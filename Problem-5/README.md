@@ -1,3 +1,5 @@
+# NOTICE - I'll attempt to at least finish this problem even though the contest is over.
+
 Q5-Holiday Rush.md 11/14/2020
 1 / 2
 Question 5: Holiday Rush
