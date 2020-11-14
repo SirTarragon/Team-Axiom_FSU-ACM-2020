@@ -10,25 +10,25 @@ int main(){
 
   while(input >= CAKE || input == CAKE){
     input -= CAKE;
-    cout << input << endl;
+    //cout << input << endl;
     cake_count++;
   }
 
   while(input >= PIE || input == PIE){
     input -= PIE;
-    cout << input << endl;
+    //cout << input << endl;
     pie_count++;
   }
 
   while(input > APPLE || input == APPLE){
     input -= APPLE;
-    cout << input << endl;
+    //cout << input << endl;
     apple_count++;
   }
 
   while(input > CANDY_CORN || input == CANDY_CORN){
     input -= CANDY_CORN;
-    cout << input << endl;
+    //cout << input << endl;
     corn_count++;
   }
 
