@@ -1,3 +1,5 @@
+// McClanahan
+
 #include <iostream>
 
 using namespace std;
@@ -10,7 +12,7 @@ int main()
 	int total1, total2;	//Will hold final total values for each person respectively
 
 	cin >> n;
- 
+
 	for (int i = 0; i < n; i++)
 	{
 		cin >> type >> whitespace >> size;
