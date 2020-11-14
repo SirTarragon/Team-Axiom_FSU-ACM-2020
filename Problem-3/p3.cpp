@@ -1,3 +1,5 @@
+// McClanahan
+
 #include <iostream>
 #include <string>
 
@@ -18,17 +20,16 @@ int main()
     {
       if (input[i] != ' ' && input[j] == ' ')
       {
-	j--;
-	i--;
+	        j--;
+	        i--;
       }
       else if (input[i] != ' ' && input [j] != ' ')
       {
-        input.erase(i);
-	j--;
+        input.erase(i, 1);
+	       j--;
       }
     }
-    else
-      j--;
+    else{j--;}
   }
 
   cout << input;
