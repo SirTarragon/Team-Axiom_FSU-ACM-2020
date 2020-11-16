@@ -36,14 +36,15 @@ character ' ' and there will be one time slot per line of output.
 
 # Examples
 Input Example
+
 4
 12:15 PM 1 1 3 2
 09:00 AM 13 3 3 0
 09:15 AM 13 1 0 0
 12:00 PM 4 0 5 4
-Q5-Holiday Rush.md 11/14/2020
-2 / 2
+
 Output example
+
 09:10 AM Table 13: 3 app
 09:25 AM Table 13: 1 app 3 main
 12:15 PM Table 4: 5 main
