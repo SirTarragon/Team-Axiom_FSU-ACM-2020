@@ -25,7 +25,7 @@ Another example: 2 Gummy Mediums
 The first line of input will be a single integer N representing the N number of candies belonging
 to person 1. This will then be followed by N lines of input in the following format:
 
-<A><single white-space><B>
+"A""single white-space""B"
 
 Where A represents the candy type and B represents the size of the candy. the candy and sizes
 are represented in the following table:
