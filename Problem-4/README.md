@@ -40,6 +40,7 @@ black electrical I
 black electrical O
 white admin I
 white admin O
+
 Sample output 1
 orange
 1
@@ -56,6 +57,7 @@ yellow medbay O
 blue shields O
 blue admin I
 blue cafeteria O
+
 Sample Output 2
 blue
 2
