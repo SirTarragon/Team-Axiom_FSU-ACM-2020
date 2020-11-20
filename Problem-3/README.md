@@ -1,5 +1,3 @@
-# NOTICE - I'll attempt to at least finish this problem even though the contest is over.
-
 # 3 Imposter Palindromes
 Bob and Hannah love palindromes. They love palindromes so much that they wrote a whole
 book of palindromes called Emu Love Volume. However, right before publishing the book, they
