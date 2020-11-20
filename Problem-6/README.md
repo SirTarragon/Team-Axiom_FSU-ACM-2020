@@ -1,5 +1,3 @@
-# NOTICE - I'll attempt to at least finish this problem even though the contest is over.
-
 # 6 Burns So Good
 Timothy “Sauceboss” von Fyre knows how to make one thing: hot sauce. His creations are regionally recognized as being the finest around, with one customer remarking of his newest sauce
 
